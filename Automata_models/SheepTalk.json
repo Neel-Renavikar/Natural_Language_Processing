@@ -1,0 +1,50 @@
+{
+	"States": [
+		{ "id": "q0" },
+		{ "id": "q1" },
+		{ "id": "q2" },
+		{ "id": "q3" },
+		{ "id": "q4" }
+	],
+	"Accepted_characters": [
+		{ "id": "b"},
+		{ "id": "a"},
+		{ "id": "!"}
+	],
+	"Starting_states": [
+		{ "id": "q0"}
+	],
+	"Accepting_states": [
+		{ "id": "q4"}
+	],
+	"Transition_functions": [
+		{ "state":"q0",
+		  "function":[
+			{ "input_char":"b",
+			  "next_state":"q1"}
+			]
+		},
+		{ "state":"q1",
+		  "function":[
+			{ "input_char":"a",
+			  "next_state":"q2"}
+			]
+		},
+		{ "state":"q2",
+		  "function":[
+			{ "input_char":"a",
+			  "next_state":"q3"}
+			]
+		},
+		{ "state":"q3",
+		  "function":[
+			{ "input_char":"a",
+			  "next_state":"q3"
+			},
+			{ "input_char":"!",
+			  "next_state":"q4"
+			}
+			]
+		}
+	]
+}
